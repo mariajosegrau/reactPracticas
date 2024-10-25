@@ -1,24 +1,20 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 
 const Contacto = () => {
-    // Hook para manejar la navegación de forma programática.
-    const navegar = useNavigate();
-    return (
-        <>
-            <h2>
-                Si necesitas más información, escribe a llllll@rutas.es
-            </h2>
+        //Hook para redirigir
+    const navigate = useNavigate();
 
-            <button onClick={() => {
-                // Se navega hacia la ruta "Inicio".
-                navegar("/");
-            }}
-            >
-                Volver a inicio.
-            </button>
-        </>
+      //funcion para redirigir a Inicio utilizando Hook.
+    const irInicio = () => {
+        navigate('/');
+    }
+    return (
+      <div>
+        <h1>Contacto</h1>
+        <p>Si tienes alguna pregunta, contacta con nosotros en: contacto@ejemplo.com</p>
+        <button onClick={irInicio} className='boton-inicio' >Ir a Inicio</button>
+      </div>
     );
-};
+  };
 
 export default Contacto;
