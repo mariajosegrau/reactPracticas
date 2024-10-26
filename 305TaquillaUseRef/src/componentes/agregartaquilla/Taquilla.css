@@ -1,0 +1,15 @@
+.recaudacion-taquilla {
+
+    color: red;
+    text-align: right;
+    margin-right: 40px;
+    width: 60%;
+    padding: 10px;
+
+    border-color: red;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}
