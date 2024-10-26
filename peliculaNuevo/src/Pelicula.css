@@ -1,0 +1,26 @@
+
+.pelicula{
+    border: solid 2px red;
+
+}
+
+.cartel-resumen{
+display:flex;
+align-items: center;
+justify-content: flex-start;
+}
+.img{
+    width: 200px;
+    height: auto;
+}
+.descripcion{
+    max-width: 400px;
+    
+}
+   
+
+h1{
+    font-size: 100px;
+    justify-content: flex-start;
+    
+}

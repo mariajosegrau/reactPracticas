@@ -1,0 +1,37 @@
+#solouno{
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "foto texto";
+    background-color: rgb(225, 254, 251);
+    width: auto;
+    margin: 20px;
+    border: solid 3px rgb(25, 9, 88);
+    margin-bottom: 2px;
+}
+#texto{
+    grid-area: texto;
+    display: block;
+}
+h2{
+    grid-area: titulo;
+    font-size: 3rem;
+    text-align: start;
+    padding-left: 20px;
+}
+#img-actor{
+    
+    grid-area: foto;
+    width: 300px;
+    border: solid 5px blanchedalmond;
+    margin: 20px;
+}
+h4{
+
+    grid-area: texto;
+    font-size: 30px;
+   
+   
+}

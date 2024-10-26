@@ -1,0 +1,49 @@
+
+.pelicula{
+    border: solid 2px red;
+
+}
+
+.cartel-resumen{
+display:flex;
+align-items: center;
+justify-content: flex-start;
+}
+.img{
+    width: 200px;
+    height: auto;
+}
+.descripcion{
+    max-width: 400px;
+    
+}
+   
+
+h1{
+    font-size: 100px;
+    justify-content: flex-start;
+    
+}
+.botones-taquilenco{
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+    padding-left: 50px;
+}
+.boton-elenco{
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    color:aqua;
+    border-color: aqua;
+    font-size: 30px;
+}
+.boton-taquilla{
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-left: 30px;
+    color: red;
+    border-color: red;
+    font-size: 30px;
+}
