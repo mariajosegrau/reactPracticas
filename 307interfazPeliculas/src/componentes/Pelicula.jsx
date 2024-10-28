@@ -1,25 +1,23 @@
-import React from "react";
-import Interpretes from "./Interpretes.jsx";
 
-const Pelicula = (props) => {
-  const { nombre, cartelera, actores, children } = props;
-  return (
-    <>
-      <div className='pelicula'>
-        <h2>{nombre}</h2>
-        <div>
-          <img src={cartelera}></img>
-          <p className='resumen'>{children}</p>
+import React from 'react';
+import './Pelicula.css';
+import Actor from './Actor';
+
+    // por children se mostrará el resumen y el resto por parámetro
+const Pelicula = ({peli}) => { 
+    //desestructuro props
+    //const {children, nombre, director, link_cartelera, actores} = props;
+  
+    return (
+        //jsx   
+        <div className="pelicula">
+            <h1>{peli.nombre}</h1>
+            <h3>{peli.director}</h3>
+            <div className="cartel-resumen" cartelera={peli.link_cartelera}>
+                <div className='resumen-contenedor' >{peli.children}</div>  
+            </div>
+            <Actor actores={peli.actores}></Actor>
         </div>
-        <div>
-          <h3>Elenco</h3>
-          <div>
-            <Interpretes interpretes={actores} />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    );
 };
-
 export default Pelicula;

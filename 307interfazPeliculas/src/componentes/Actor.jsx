@@ -2,7 +2,7 @@ import React from "react";
 
 const Actor = (props) => {
   /* Se desestructura el objeto datos, no props ya que el primero está contenido en el segundo. */
-  const { imagen, nombre, biografia } = props.datos;
+  const { imagen, nombre, biografia } = props;
   return (
     <>
       <div className='actor'>

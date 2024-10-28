@@ -1,0 +1,29 @@
+.menu-container {
+  background-color:#ecf0f1 ;
+  /* Fondo oscuro */
+  color: #2c3e50;
+  /* Texto claro */
+  padding: 20px;
+  width: auto;
+  font-family: Arial, sans-serif;
+  margin: auto;
+}
+
+
+.menu-container ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-container ul li {
+  margin: 10px 0;
+  padding: 20px;
+  margin: 10px;
+  background-color: antiquewhite;
+  border: solid 1px black;
+  font-size: 18px;
+}
+

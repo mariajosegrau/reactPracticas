@@ -10,11 +10,11 @@ const Pelicula = ({ children, nombre, director, link_cartelera, actores, recauda
     const elencoRef = useRef();   //Hook que vincula con el elemento Elenco
     const taquillaRef = useRef();
 
-    //funcion para que muestre o no los atores
+
     const toggleVisibility = () => {
         elencoRef.current.classList.toggle('hidden');
     };
-    //funcion para que muestre o no el contenido de taquilla
+
     const toggleVisibilityTaquilla = () => {
         taquillaRef.current.classList.toggle('hidden');
     };

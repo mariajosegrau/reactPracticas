@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Cabecera.css';
 import Menu from './Menu.jsx';
 

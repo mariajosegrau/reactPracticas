@@ -1,28 +1,24 @@
 import React from "react";
 import Pelicula from "./Pelicula.jsx";
 
-const Peliculas = (props) => {
-  const { listado } = props;
+const Peliculas = ({ pelis }) => {
+
 
   return (
     <>
       <div id='peliculas'>
-        {listado.length ? listado.map((valor) => {
-              return (
-                <Pelicula
-                  key={valor.id}
-                  nombre={valor.nombre}
-                  cartelera={valor.cartelera}
-                  actores={valor.actores}
-                  /* Todo esto se puede resumir si la pasamos directamente el objeto de esta forma: datos={valor}.
-                  Eso sí, en <Pelicula> habría que descomponer props.datos y no props. 
-                  Ver ejemplo en <Interpretes>.*/
-                >
-                  {valor.resumen}
-                </Pelicula>
-              );
-            })
-          : `No se han encontrado películas.`}
+        {pelis.map((pelis, index) => (//devuelve un objeto pelicula en cada iteracion
+          <Pelicula
+            nombre={pelis.nombre || index}
+            director={pelis.director}
+            cartelera={pelis.cartelera}
+            actores={pelis.actores}  //
+            recaudacion={pelis.recaudacion}//incluimos el valor que ha de mostrar el componente Taquilla
+          >
+            {pelis.resumen}
+          </Pelicula>//muestra el resumen en children
+        ))};
+
       </div>
     </>
   );
