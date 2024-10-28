@@ -13,9 +13,9 @@ const App = () => {
 
       <Rutas />
 
-      <Contenido>
-        <Peliculas />
-      </Contenido>
+      <Contenido />
+
+
       <Pie />
     </div>
   );

@@ -19,6 +19,9 @@ const Rutas = () => {
                    
                     <Route path="acerca-de" element={<Acercade />} />
                     <Route path="*" element={<Error />} />
+
+                    {/*Creación de submenú */}
+                    <Route path=""></Route>
                 </Routes>
             </Contenido>
         </>
