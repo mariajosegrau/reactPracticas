@@ -4,6 +4,7 @@ import Pelicula from './Pelicula.jsx';
 //y no hace falta crear la constante
 
 const ListarPeliculas = ({ peliculas }) => {
+     
 
     return (
         //devolvemos un elemento
